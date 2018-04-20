@@ -14,8 +14,10 @@ $ npm i tmallbot
 ```js
 let tmallbot = require('tmallbot');
 
+let config = {};
+
 app.use(express.query());
-app.use('/tmallbot', tmallbot(function (req, res, next) {
+app.use('/tmallbot', tmallbot(config, function (req, res, next) {
   var data = req.body;
   if (data.utterance === '你好!') {
     res.reply('你也好');
