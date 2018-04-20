@@ -24,7 +24,19 @@ app.use('/tmallbot', tmallbot(config, function (req, res, next) {
   } else if (data.utterance === '我想听音乐') {
     res.reply('你想听谁的音乐？', 'ASK_INFO');
   } else {
-    res.reply('Hello World!!!');
+    res.reply({
+      "returnCode": 0,
+      "returnErrorSolution": "",
+      "returnMessage": "",
+      "returnValue": {
+        "reply": "Hello World!!!",
+        "resultType": "RESULT",
+        "actions": [],
+        "properties": {},
+        "executeCode": "SUCCESS",
+        "msgInfo": ""
+      }
+    });
   }
 }));
 ```
