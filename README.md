@@ -1,2 +1,2 @@
 # tmallbot
-tmallbot for node.js
+天猫精灵Node库
