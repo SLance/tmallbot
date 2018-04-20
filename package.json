@@ -7,7 +7,7 @@
     "node": ">=4.0.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/SLance/tmallbot/issues"
   },
-  "homepage": "https://github.com/SLance/tmallbot#readme"
+  "homepage": "https://github.com/SLance/tmallbot#readme",
+  "devDependencies": {
+    "mocha": "^5.1.1"
+  }
 }
