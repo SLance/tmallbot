@@ -22,7 +22,7 @@ app.use('/tmallbot', tmallbot(config, function (req, res, next) {
   if (data.utterance === '你好!') {
     res.reply('你也好');
   } else if (data.utterance === '我想听音乐') {
-    res.reply('你想听谁的音乐？', 'ASK_INFO');
+    res.reply('你想听谁的音乐？', 'ASK_INF');
   } else {
     res.reply({
       "returnCode": 0,
